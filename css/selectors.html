@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Just H1 - element selector */
+        h1 {
+            color:navy;
+        }
+        /* Id selector */
+        #second {
+            color:green;
+        }
+
+        /* Both H1 and H2 - group selection */
+        h1, h2 {
+            font-family:arial;
+        }
+
+        /* H3 nested in DIV */
+        div h3 {
+            font-style:italic;
+        }
+
+        /* A DIV with banner class */
+        div.banner {
+            font-size:3em;
+        }
+        /* Attribute selector */
+        a[target] {
+            color:red;
+        }
+
+        a[target = '_blank'] {
+            color:red;
+        }
+
+        a[href $= ".com"] {
+            color:black;
+        }
+
+        /* CSS Class */
+        .bright {
+            color : green;
+            font-weight:  bold;
+            letter-spacing: 5pt;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>First Heading</h1>
+    <h1 id="second">Second Heading</h1>
+    <h2>Third Heading</h2>
+    <div>
+        <h3>Fourth Heading</h3>
+    </div>
+
+    <div class="banner">This is banner </div>
+
+    <a href="google.com">Google</a>
+    <br>
+    <a href="khanacademy.org" target="_blank">Khan Academy</a>
+    <div class="bright">This is bright div</div>
+</body>
+
+</html>
