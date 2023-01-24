@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maturity Amount</title>
+    <script>
+        "use strict"
+        function process() {
+            var amount = parseInt(document.getElementById("amount").value);
+            var output = document.getElementById("output");
+            var maturityAmount = amount + amount * 0.08 
+            // output.innerHTML = "Maturity amount for deposit amount : " + 
+            //      amount + " is :" + maturityAmount;
+
+            output.innerHTML = `Maturity amount for deposit amount : ${amount} is : ${maturityAmount}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculate Maturity Amount</h1>
+    Deposit Amount <input type="number" id="amount" />
+    <p></p>
+    <button onclick="process()">Calculate</button>
+    <h2 id="output"></h2>
+</body>
+</html>

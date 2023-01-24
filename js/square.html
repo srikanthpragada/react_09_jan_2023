@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Square</title>
     <script>
+        "use strict"
         function square() {
+            a = 10 
+            alert(a)
             var num = document.getElementById("num").value;
             var output = document.getElementById("output");
-            output.innerHTML= num * num;
+            output.innerHTML = parseInt(num) * parseInt(num);
         }
     </script>
 </head>
