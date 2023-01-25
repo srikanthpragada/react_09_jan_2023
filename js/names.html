@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Names</title>
+    <script>
+         function showList() {
+            var input = document.getElementById("names").value;
+            var names = input.split(",")
+            var output = ""
+            for(let n of names)
+            {
+               output += `<li>${n}</li>`
+            }
+
+            var list = document.getElementById("list");
+            list.innerHTML = output;
+        }
+    </script>
+</head>
+<body>
+    <h1>Names</h1>
+    Names <input type="text" id="names" />
+    <p></p>
+    <button onclick="showList()">Show</button>
+    <ul id="list">
+
+    </ul>
+</body>
+</html>
