@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate PAN</title>
+    <script>
+        "use strict"
+        function validate() {
+            var pan = document.getElementById("txtPan").value;
+            var message = document.getElementById("message");
+            if (/[a-z]{5}[0-9]{4}[a-z]/.test(pan)) 
+               message.innerText = "Valid PAN";
+            else
+               message.innerText = "Invalid PAN";  
+        }
+    </script>
+</head>
+<body>
+    <h1>Validate PAN</h1>
+    PAN <input type="text" id="txtPan" />
+    <p></p>
+    <button onclick="validate()">Validate</button>
+    <h2 id="message"></h2>
+</body>
+</html>
