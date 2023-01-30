@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Watch</title>
+   
+</head>
+<body>
+    <h1 id="clock" style="font-size:4em"></h1>
+    <script>
+        var id = setInterval(showClock,1000);
+        var clock = document.getElementById("clock")
+        
+        function showClock() {
+            var ct  = new Date()
+            var output = `${ct.getHours()}:${ct.getMinutes()}:${ct.getSeconds()}`
+            clock.innerHTML = output
+        }
+    </script>
+</body>
+</html>
