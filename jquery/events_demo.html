@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"> </script>
+</head>
+<script>
+    // Document ready event 
+    $(() => {
+        $("button").click( (e) =>  {
+            console.log(e)
+            alert("You Clicked On " + e.target.innerText  + " Button!!")
+        }
+       )
+    });
+</script>
+
+<body>
+    <button>First</button>
+    <button>Second</button>
+    <button>Third</button>
+</body>
+
+</html>
