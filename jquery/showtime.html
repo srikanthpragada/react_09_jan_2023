@@ -20,7 +20,7 @@
         $.ajax(
                 {
                     url: URL,
-                    type: 'get',
+                    type: 'get',   // http method 
                     success: 
                        (result) =>  $("#message").text(result.datetime),
                     error: (errorObj) => {
@@ -30,7 +30,6 @@
                 }
             );
     }
-
 
 </script
 <body>
