@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 export default function Course2({title, price, duration}) {
     return (
@@ -9,4 +10,11 @@ export default function Course2({title, price, duration}) {
             <h3>{duration}</h3>
         </>
     )
-}
+} // component 
+
+// validate properties     
+Course2.propTypes = {
+    title : PropTypes.string.isRequired,
+    price : PropTypes.number.isRequired,
+    duration : PropTypes.number.isRequired
+};

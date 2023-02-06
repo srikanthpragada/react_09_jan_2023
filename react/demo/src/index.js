@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import CourseList from './basics/CourseList';
+import Product from './basics/Product';
 import './index.css';
 //import reportWebVitals from './reportWebVitals';
-// <Course2  title="Java EE"  price={10000}  duration={36} />
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <CourseList />    
+      <Product name="Java Complete Reference" 
+               price={600}
+               features={["Upgraded to Java 19", "Lots of Examples"]} />
   </React.StrictMode>
 );
 
