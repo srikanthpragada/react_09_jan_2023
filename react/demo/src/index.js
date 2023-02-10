@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import PropsDrilling from './context/PropsDrilling';
 import './index.css';
+import Passengers from './state/Passengers';
 //import reportWebVitals from './reportWebVitals';
 
 // var courses = [
@@ -12,7 +12,7 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-         <PropsDrilling />
+         <Passengers />
   </React.StrictMode>
 );
 
