@@ -1,39 +1,43 @@
 import React, { useState } from 'react'
 
 function AddPassenger({ addNewPassenger }) {
-    const [details, setDetails] = 
-          useState({name : '', gender:'male', age:0})
-    
+    const [pname, setPname] = useState("")
+    const [gender, setGender] = useState("male")
+    const [age, setAge] = useState("")
+
     // Handle form submission 
     function addPassenger(e) {
-        addNewPassenger(details)
+        console.log(pname, gender, age)
+        addNewPassenger({ name: pname, gender: gender, age: age })
         e.preventDefault()
     }
 
-    function updateField(e) {
-         var name = e.target.name 
-         var value = e.target.value 
-         // replace value of field that is updated
-         setDetails( {...details, [name] : value}) 
+    function updatePname(e) {
+        setPname(e.target.value)
+    }
+
+    function updateAge(e) {
+        setAge(e.target.value)
+    }
+
+    function updateGender(e) {
+        setGender(e.target.value)
     }
 
     return (
         <>
             <form onSubmit={addPassenger}>
                 Name <br />
-                <input name="name" onChange={updateField} type="text"
-                  required value={details.name} />
+                <input onChange={updatePname} type="text" required value={pname} />
                 <p />
                 Gender <br />
-                <select name="gender" value={details.gender} 
-                        onChange={updateField}>
+                <select value={gender} onChange={updateGender}>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select>
                 <p />
                 Age <br />
-                <input name="age" onChange={updateField} type="number" 
-                     value={details.age} required />
+                <input onChange={updateAge} type="number" value={age} required />
                 <p />
                 <button>Add</button>
             </form>
@@ -69,7 +73,7 @@ function ListPassengers({ passengers, deletePassenger }) {
     )
 }
 
-export default function Passengers() {
+export default function Passengers2() {
     const [passengers, setPassengers] = useState([])
 
     function addNewPassenger(passenger) {
@@ -83,7 +87,7 @@ export default function Passengers() {
 
     return (
         <>
-            <h1>Passengers Form Version 2</h1>
+            <h1>Passengers Form</h1>
             <AddPassenger addNewPassenger={addNewPassenger} />
             <p></p>
             {passengers.length > 0 &&

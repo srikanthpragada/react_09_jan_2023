@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Passengers from './state/Passengers';
+import DigitalClock from './state/DigitalClock';
 //import reportWebVitals from './reportWebVitals';
 
 // var courses = [
@@ -12,7 +12,7 @@ import Passengers from './state/Passengers';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-         <Passengers />
+         <DigitalClock />
   </React.StrictMode>
 );
 
