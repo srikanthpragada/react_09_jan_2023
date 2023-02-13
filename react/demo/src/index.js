@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import TimeInTimezone from './ajax/TimeInTimezone';
 import './index.css';
-import DigitalClock from './state/DigitalClock';
 //import reportWebVitals from './reportWebVitals';
 
 // var courses = [
@@ -12,7 +12,7 @@ import DigitalClock from './state/DigitalClock';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-         <DigitalClock />
+         <TimeInTimezone />
   </React.StrictMode>
 );
 
