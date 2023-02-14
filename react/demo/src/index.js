@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import TimeInTimezone from './ajax/TimeInTimezone';
+import AddCourse from './ajax/AddCourse';
 import './index.css';
 //import reportWebVitals from './reportWebVitals';
 
@@ -12,7 +12,7 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-         <TimeInTimezone />
+         <AddCourse />
   </React.StrictMode>
 );
 
