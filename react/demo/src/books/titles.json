@@ -4,7 +4,7 @@
       "id": 2,
       "title": "Long walk to freedom",
       "author": "Nelson Mandela",
-      "price": "600"
+      "price": "400"
     },
     {
       "title": "Promised Land",
@@ -41,6 +41,18 @@
       "author": "Hasting",
       "price": "600",
       "id": 10
+    },
+    {
+      "title": "Gift of fear",
+      "author": "Xyz",
+      "price": "500",
+      "id": 11
+    },
+    {
+      "title": "slfjsfj",
+      "author": "lksjflsjfdlsjf",
+      "price": "322",
+      "id": 12
     }
   ],
   "authors": [

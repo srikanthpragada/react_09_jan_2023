@@ -8,7 +8,6 @@ export default function AddBook() {
   let navigate = useNavigate()
 
   function addBook(event) {
-
     event.preventDefault()
 
     // make ajax request for post 

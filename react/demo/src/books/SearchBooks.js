@@ -22,6 +22,7 @@ export default function SearchBooks() {
     }
 
     function changeValue(event) {
+        setDone(false)
         setSearchText(event.target.value)
     }
 
